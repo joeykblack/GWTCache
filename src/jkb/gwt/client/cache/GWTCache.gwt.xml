@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='gwtcache'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+
+  <!-- Generator for cached services -->
+  <generate-with class='jkb.gwt.client.cache.server.CachedServiceGenerator'>
+  	<when-type-assignable class='jkb.gwt.client.cache.shared.ICacheable' />
+  </generate-with>
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+
+</module>
